@@ -1,8 +1,6 @@
 import rsa
 import streamlit as st
 
-
-
 (pubkey, privkey) = rsa.newkeys(512)
 st.set_page_config(layout = "wide")
 st.title('Шифрование методом RSA')
