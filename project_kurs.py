@@ -21,4 +21,4 @@ with st.container() as decode:
     st.write(message.decode('utf8'))
 
 with st.container() as download_priv:
-    st.download_button('Скачать приватный ключ', str(privkey), file_name = 'Private key.txt')
+    st.download_button('Скачать открытый ключ', str(pubkey), file_name = 'Public key.txt')
