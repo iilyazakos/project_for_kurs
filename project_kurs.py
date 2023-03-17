@@ -18,5 +18,5 @@ with st.container() as decode:
     message = rsa.decrypt(crypto, privkey)  # Decryption
     st.write(message.decode('utf8'))
 
-with st.container() as download_priv:
+with st.container() as download_key:
     st.download_button('Скачать открытый ключ', str(pubkey), file_name = 'Public key.txt')
