@@ -5,7 +5,7 @@ import streamlit as st
 st.set_page_config(layout = "wide")
 st.title('Шифрование методом RSA')
 with st.container() as ininput:
-    word = st.text_input("Введите слово для дальнейшей его шифрации")
+    word = st.text_input("Введите слово для дальнейшего его шифрования")
     crypto = rsa.encrypt(word.encode('utf8'), pubkey)  # Encryption
 
 with st.container() as out_code:
